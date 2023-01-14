@@ -1,0 +1,76 @@
+.box {
+  border: 1px solid black;
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  margin-top: 70px;
+}
+.col {
+  text-align: center;
+}
+.input-group {
+  padding-top: 25px;
+}
+.searchbar {
+  width: 90%;
+  border-radius: 5px;
+  border: 3px solid #64c4ed;
+}
+.searchbar:focus {
+  outline: none;
+  box-shadow: 0px 0px 9px 0px #64c4ed;
+}
+.button {
+  background-color: white;
+  border: 3px solid #64c4ed;
+  border-radius: 5px;
+  border-left: 0;
+  padding: 0px 19px;
+}
+.button:hover {
+  background-color: #64c4ed;
+  transition: all 150ms ease-in-out;
+}
+.maincity {
+  text-align: center;
+  padding-top: 80px;
+}
+.maincitynamepin {
+  font-size: 40px;
+  font-weight: 500;
+}
+#maincityname {
+  padding-left: 4px;
+}
+.maincitytemp,
+#date {
+  padding-left: 70px;
+  font-size: 20px;
+  text-align: left;
+}
+.pin {
+  color: #64c4ed;
+}
+
+.maininfo {
+  text-align: left;
+  font-size: 20px;
+  padding-top: 25px;
+}
+.mainicon {
+  font-size: 80px;
+  color: #f0d78c;
+}
+.futuredays {
+  padding-top: 50px;
+}
+.day {
+  font-size: 30px;
+}
+.icon {
+  font-size: 30px;
+  color: #f0d78c;
+}
+.temp {
+  font-size: 16px;
+}
