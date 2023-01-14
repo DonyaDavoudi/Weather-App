@@ -74,3 +74,11 @@
 .temp {
   font-size: 16px;
 }
+#moreInfo {
+  text-align: center;
+  font-family: monospace;
+  margin-top: 20px;
+}
+#srcLink {
+  color: #64c4ed;
+}
