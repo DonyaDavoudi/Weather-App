@@ -59,7 +59,7 @@
   font-size: 20px;
   padding-top: 25px;
 }
-#description {
+#description::first-letter {
   text-transform: capitalize;
 }
 .mainicon {
