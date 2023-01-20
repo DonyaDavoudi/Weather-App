@@ -37,6 +37,12 @@ function getData(value) {
 
 function showCityData(response) {
   let temp = document.querySelector("span#maincitytempnum");
+  let desc = document.querySelector("span#description");
+  let humidity = document.querySelector("span#humidity");
+  let wind = document.querySelector("span#wind");
   temp.innerHTML = Math.round(response.data.main.temp);
+  desc.innerHTML = response.data.weather[0].description;
+  humidity.innerHTML = response.data.main.humidity;
+  wind.innerHTML = Math.round(response.data.wind.speed);
   console.log(response);
 }
