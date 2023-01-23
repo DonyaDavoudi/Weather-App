@@ -47,7 +47,7 @@ function showCityData(response) {
   let desc = document.querySelector("span#description");
   let humidity = document.querySelector("span#humidity");
   let wind = document.querySelector("span#wind");
-  let dateElement = document.querySelector("div#date");
+  let dateElement = document.querySelector("span#date");
   temp.innerHTML = Math.round(response.data.main.temp);
   desc.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
