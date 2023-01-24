@@ -48,9 +48,15 @@ function showCityData(response) {
   let humidity = document.querySelector("span#humidity");
   let wind = document.querySelector("span#wind");
   let dateElement = document.querySelector("span#date");
+  let mainIconElement = document.querySelector("img#mainicon");
   temp.innerHTML = Math.round(response.data.main.temp);
   desc.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  mainIconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  mainIconElement.setAttribute("alt", response.data.weather[0].description);
 }

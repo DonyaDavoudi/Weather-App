@@ -15,21 +15,21 @@
 .searchbar {
   width: 90%;
   border-radius: 5px;
-  border: 3px solid #64c4ed;
+  border: 3px solid #48484a;
 }
 .searchbar:focus {
   outline: none;
-  box-shadow: 0px 0px 9px 0px #64c4ed;
+  box-shadow: 0px 0px 9px 0px #48484a;
 }
 .button {
   background-color: white;
-  border: 3px solid #64c4ed;
+  border: 3px solid #48484a;
   border-radius: 5px;
   border-left: 0;
   padding: 0px 19px;
 }
 .button:hover {
-  background-color: #64c4ed;
+  background-color: #48484a;
   transition: all 150ms ease-in-out;
 }
 .maincity {
@@ -50,7 +50,7 @@
   text-align: left;
 }
 .pin {
-  color: #64c4ed;
+  color: #48484a;
 }
 
 .maininfo {
@@ -69,6 +69,9 @@
 .mainicon {
   font-size: 80px;
   color: #f0d78c;
+}
+#mainicon {
+  padding-bottom: 33px;
 }
 .futuredays {
   padding-top: 50px;
@@ -89,5 +92,5 @@
   margin-top: 20px;
 }
 #srcLink {
-  color: #64c4ed;
+  color: #48484a;
 }
