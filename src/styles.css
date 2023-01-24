@@ -30,6 +30,7 @@
 }
 .button:hover {
   background-color: #48484a;
+  color: white;
   transition: all 150ms ease-in-out;
 }
 .maincity {
@@ -66,10 +67,6 @@
 #description::first-letter {
   text-transform: capitalize;
 }
-.mainicon {
-  font-size: 80px;
-  color: #f0d78c;
-}
 #mainicon {
   padding-bottom: 33px;
 }
@@ -81,7 +78,7 @@
 }
 .icon {
   font-size: 30px;
-  color: #f0d78c;
+  color: #ec6e4c;
 }
 .temp {
   font-size: 16px;
@@ -92,5 +89,5 @@
   margin-top: 20px;
 }
 #srcLink {
-  color: #48484a;
+  color: #ec6e4c;
 }
