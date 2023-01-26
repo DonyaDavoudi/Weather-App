@@ -18,8 +18,8 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
-  <body>
-    <div class="box">
+  <body style="background-color:#48484a">
+    <div class="box" style="background-color: rgb(189, 188, 188);">
       <div class="container">
         <div>
           <form action="search">
@@ -50,32 +50,7 @@
           </div>
           <div class="col mainicon"><img  id="mainicon" src="http://openweathermap.org/img/wn/01d@2x.png" alt=""></div>
         </div>
-        <div class="row">
-          <div class="col futuredays">
-            <div class="day">Thu</div>
-            <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
-            <div class="temp">6°/13°</div>
-          </div>
-          <div class="col futuredays">
-            <div class="day">Fri</div>
-            <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
-            <div class="temp">7°/13°</div>
-          </div>
-          <div class="col futuredays">
-            <div class="day">Sat</div>
-            <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
-            <div class="temp">6°/13°</div>
-          </div>
-          <div class="col futuredays">
-            <div class="day">Sun</div>
-            <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
-            <div class="temp">4°/13°</div>
-          </div>
-          <div class="col futuredays">
-            <div class="day">Mon</div>
-            <div class="icon"><i class="fa-solid fa-sun"></i></div>
-            <div class="temp">4°/13°</div>
-          </div>
+        <div id="forecast">
         </div>
         <div id="last-update">Last updated: <span id="date">Sunday 17:39</span></div>
       </div>

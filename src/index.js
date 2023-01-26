@@ -42,8 +42,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Tehran");
-
 function showCityData(response) {
   let temp = document.querySelector("span#maincitytempnum");
   let desc = document.querySelector("span#description");
@@ -62,3 +60,26 @@ function showCityData(response) {
   );
   mainIconElement.setAttribute("alt", response.data.weather[0].description);
 }
+search("Tehran");
+
+//forecast//
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col futuredays">
+            <div class="day">${day}</div>
+            <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <div class="temp">6°/13°</div>
+          </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
