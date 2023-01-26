@@ -23,24 +23,26 @@ function formatDate(timestamp) {
 }
 
 //search engine//
-function showCity(event) {
-  event.preventDefault();
-  let input = document.querySelector("input.searchbar");
-  city.innerHTML = input.value;
-  let value = input.value;
-  getData(value);
-}
-let city = document.querySelector("span#maincityname");
+let cityElement = document.querySelector("span#maincityname");
 let form = document.querySelector("form");
-form.addEventListener("submit", showCity);
+form.addEventListener("submit", handleSubmit);
 
-function getData(value) {
+function search(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
   axios
-    .get(`${apiUrl}&q=${value}&units=metric&appid=${apiKey}`)
+    .get(`${apiUrl}&q=${city}&units=metric&appid=${apiKey}`)
     .then(showCityData);
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("input.searchbar");
+  cityElement.innerHTML = cityInputElement.value;
+  search(cityInputElement.value);
+}
+
+search("Tehran");
 
 function showCityData(response) {
   let temp = document.querySelector("span#maincitytempnum");
