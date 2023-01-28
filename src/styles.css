@@ -59,29 +59,26 @@
   font-size: 20px;
   padding-top: 25px;
 }
-#last-update {
-  font-size: 17px;
-  padding-top: 35px;
-  text-align: center;
-}
+
 #description::first-letter {
   text-transform: capitalize;
 }
 #mainicon {
   padding-bottom: 33px;
 }
-.futuredays {
-  padding-top: 50px;
+#forecast {
+  padding-top: 30px;
 }
 .day {
   font-size: 30px;
 }
-.icon {
-  font-size: 30px;
-  color: #ec6e4c;
-}
 .temp {
   font-size: 16px;
+}
+#last-update {
+  font-size: 17px;
+  padding-top: 35px;
+  text-align: center;
 }
 #moreInfo {
   text-align: center;
