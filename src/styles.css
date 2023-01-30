@@ -1,3 +1,6 @@
+#background {
+  background-color: #48484a;
+}
 .box {
   border: 1px solid black;
   width: 600px;
@@ -5,6 +8,7 @@
   margin: auto;
   margin-top: 70px;
   border-radius: 5px;
+  background-color: rgb(189, 188, 188);
 }
 .col {
   text-align: center;
