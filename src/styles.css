@@ -3,13 +3,14 @@
 }
 .box {
   border: 1px solid black;
-  width: 600px;
-  height: 500px;
+  width: 90vh;
+  height: 70vh;
   margin: auto;
   margin-top: 70px;
   border-radius: 5px;
   background-color: rgb(189, 188, 188);
 }
+
 .col {
   text-align: center;
 }
@@ -92,4 +93,39 @@
 }
 #srcLink {
   color: #ec6e4c;
+}
+@media (max-width: 768px) {
+  .box {
+    width: 80vh;
+    height: 75vh;
+  }
+  .button {
+    padding: 0px 10px;
+  }
+  .maincitynamepin {
+    font-size: 30px;
+  }
+  #maincityname {
+    font-size: 30px;
+  }
+  .maincitytemp {
+    font-size: 20px;
+    padding-left: 45px;
+  }
+  .maininfo {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .day {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .box {
+    width: 60vh;
+    height: 70vh;
+  }
+  .button {
+    padding: 0px 10px;
+  }
 }
