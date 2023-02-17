@@ -120,12 +120,36 @@
     font-size: 20px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .box {
-    width: 60vh;
-    height: 70vh;
+    width: 45vh;
+    height: 110vh;
+    display: flex;
+    justify-self: center;
   }
   .button {
-    padding: 0px 10px;
+    padding: 0px 5px;
+  }
+  .maincitytemp {
+    font-size: 20px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  #maincitytempnum {
+    margin-right: 5px;
+  }
+  #description {
+    margin-left: 5px;
+  }
+  .maininfo {
+    display: flex;
+    justify-content: center;
+  }
+  .humidity {
+    margin-right: 5px;
+  }
+  .wind {
+    margin-left: 5px;
   }
 }
